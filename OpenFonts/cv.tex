@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\begin{document}
+\lastupdated
+
+\namesection{Jack}{Hong}{ \urlstyle{same}\url{https://www.phas.ubc.ca/~jackhong} \\
+\href{mailto:jhong@alumni.ubc.ca}{jhong@alumni.ubc.ca} | 604 379 8772
+}
+
+\href{https://www.linkedin.com/in/jackhong6}{https://www.linkedin.com/in/jackhong6}
+
+\href{https://github.com/jackhong6}{https://github.com/jackhong6}
+
+\section{Research}
+\runsubsection{University of Toronto}
+\descript{| Summer student}
+\location{May 2017 – August 2017 | Toronto, ON}
+Worked with \textbf{\href{http://astro.utoronto.ca/~bovy/}{Professor Jo Bovy}} to develop a Python class to represent the gravitational potential of the spiral arms of galaxies in the \textsf{\href{https://github.com/jobovy/galpy}{galpy}} open source Python library. Used this potential class to investigate the effects of spiral arms on the Oort constants.
+\sectionsep
+
+\runsubsection{National Institute of Nanotechnology}
+\descript{| Summer student}
+\location{May 2016 – August 2016 | Edmonton, AB}
+Worked with \textbf{\href{https://sites.google.com/site/temsemeels/marek-malac}{Professor Marek Malak}} to develop and test a micro-controller based on the Intel Galileo Gen 2 Development Board (Arduino) for the Hitachi 3D Tomography Holder used in electron microscopes. Programmed the controller in the Arduino language and MATLAB to work with the existing microscopy software (Maestro).
+\sectionsep
+
+\section{Work Experience}
+\runsubsection{UBC}
+\descript{| Undergraduate Teaching Assistant}
+\location{Sep 2014 – Present | Vancouver, BC}
+\begin{tightemize}
+\item PHYS 109: Enriched Experimental Physics – help students in labs, mark lab books (Jan - Apr 2016 and Jan - Apr 2017)
+\item PHYS 100: Introductory Physics – led a tutorial section, marked exams (Sep 2017 - Dec 2017)
+\item CPSC 101: Computational Thinking – led two lab sections, marked projects and exams (Sep 2014 - Dec 2014) 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{City of Richmond}
+\descript{| Lifeguard \& Swimming Instructor}
+\location{May 2013 – Present | Richmond, BC}
+\begin{tightemize}
+\item Supervise the pool, treat first aids, respond to patron concerns, perform water tests, and clean the change rooms
+\item Teach the Red Cross Swim Programs, including preschool, kids, teens, and adults.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{IBM}
+\descript{| Software Test Engineer }
+\location{Jan 2016 – April 2016 | Victoria, BC}
+\begin{tightemize}
+\item Wrote and maintained JUnit 4 and Selenium Webdriver 2.0 tests for IBM Forms Experience Builder software.
+\item Submitted detailed bug reports that accurately and concisely described the problems found.
+\end{tightemize}
+\sectionsep
+
+
+\section{Education}
+\runsubsection{University of British Columbia}
+\descript{| BSc in Physics}
+\location{Major in Physics, minor in astronomy | 81\% average | Year 4 | Expected graduation May 2019 | Vancouver, BC}
+%\begin{tightemize}
+%\item PHYS 400 Introduction to elementary particles
+%\item PHYS 410 Computational physics
+%\end{tightemize}
+\sectionsep
+
+\section{Languages}
+\begin{minipage}[t]{.6\textwidth}
+\subsection{Programming}
+Python \textbullet{} MATLAB \textbullet{} Java \textbullet{} Shell Script \textbullet{} \LaTeX \textbullet{}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.35\textwidth}
+\subsection{Spoken \& Written}
+\location{Fluency:} English, French \\
+\location{Spoken only:} Mandarin Chinese\\
+\end{minipage}
+
+\end{document}
